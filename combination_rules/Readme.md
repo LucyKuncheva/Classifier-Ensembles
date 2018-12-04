@@ -1,4 +1,4 @@
-## Combination rules for classifier ensembles 
+## A demo of combination rules for classifier ensembles 
 
 [[L. Kuncheva. Combining Pattern Classifiers. Methods and Algorithms, 
 Wiley, second edition, 
@@ -19,6 +19,20 @@ makes the fish barely recognisable:
 Plot it for yourself with `PlotFishData.m`.
 
 #### Try the combination rules
+
+The combination rules included in this example are:
+- Majority vote
+- Average combination (average of posterior probabilities)
+- Product
+- Trained linear combiner
+- Weighted average
+- Ridge regression (on the class label variable)
+- Decision tree combiner
+- Decision templates
+- Naïve Bayes
+- BKS (Behaviour Knowledge Space)
+
+
 
 When you run `ExampleClassifierCombinationRules.m`, you will see two identical 
 plots of the fish data next to one another. Click on the slider in the bottom 
