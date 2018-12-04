@@ -14,7 +14,7 @@ Without noise, the data looks like this: [>> Fish Data <<](FishDataNoNoise.png)
 – a little bit like a tropical fish nibbling on a seaweed, doesn’t it? 
 The two classes are perfectly separable with a boundary which follows the 
 outline of the fish and the seaweed. Adding 30% noise (say, sea pollution) 
-makes the fish unrecognisable: 
+makes the fish barely recognisable: 
 [>> Fish Data with 30% Noise <<](FishDataNoise30.png)
 Plot it for yourself with `PlotFishData.m`.
 
@@ -28,3 +28,14 @@ classifiers are the red lines. For the random ensemble each classifier is
 trained by choosing among the two possible labellings the one with the smaller 
 training error. For the bootstrap ensemble, each linear classifier is trained 
 on a bootstrap sample of the data. [[Two Ensembles]](TwoEnsembleView.png)
+
+Click on the radio buttons to find out how different combination rules fare 
+on the two ensembles (Section 5.6 An example of nine combiners for 
+continuous-valued outputs, p. 178). Ideally, the fish should be “discovered” 
+and labelled correctly by the ensemble. Now increase the noise using the 
+slider and check again. Some combination rules are amazingly bad with these 
+ensembles while others are amazingly good even with large noise. 
+
+Notably, diversity plays a role. Check the ridge regression combiner for 
+50% noise. [[click here]](TwoEnsemblesRidge50.png) A diverse ensemble 
+(left) is a lot better than the bootstrap one (right).
